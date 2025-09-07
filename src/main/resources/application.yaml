@@ -6,7 +6,7 @@ spring:
       enabled: true
       path: /h2
   datasource:
-    url: jdbc:h2:file:./banco/CRM
+    url: jdbc:h2:mem:CRM
     username: sa
     password:
     driver-class-name: org.h2.Driver

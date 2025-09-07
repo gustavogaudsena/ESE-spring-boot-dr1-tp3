@@ -55,12 +55,7 @@ public class ClienteController {
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Object> delete(@PathVariable UUID id) {
-        try {
-            service.deletarPorId(id);
-            return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
-        } catch (Exception e) {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
-
-        }
+        service.deletarPorId(id);
+        return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
     }
 }

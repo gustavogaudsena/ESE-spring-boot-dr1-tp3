@@ -21,6 +21,4 @@ public class Fornecedor {
     @Column(nullable = false, length = 30)
     private String cnpj;
     private String contato;
-
-    // getters e setters
 }

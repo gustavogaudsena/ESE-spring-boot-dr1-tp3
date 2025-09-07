@@ -23,6 +23,4 @@ public class Funcionario {
     private String cargo;
 
     private int salario;
-
-    // getters e setters
 }
