@@ -1,13 +1,17 @@
 spring:
   application:
     name: CRM
+  h2:
+    console:
+      enabled: true
+      path: /h2
   datasource:
-    url: jdbc:postgresql://localhost:5432/crm
-    username: postgres
-    password: 123456
-    driver-class-name: org.postgresql.Driver
+    url: jdbc:h2:file:./banco/CRM
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
   jpa:
-    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    database-platform: org.hibernate.dialect.H2Dialect
     show-sql: true
     properties:
       hibernate:
